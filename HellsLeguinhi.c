@@ -64,7 +64,7 @@ void* imprimirAccion(void *data, char *accionIn) {
 void* ganador(void *data){
 	FILE* salida=fopen("salida.txt","a");
 	struct para,etrp *mydata= data;
-	fprintf(salida,"ganador equipo %d \n");
+	fprintf(salida,"ganador %d equipo %d \n",mydata->equipo_param);
 	exit(-1);
 
 //funcion para tomar de ejemplo
@@ -75,6 +75,7 @@ void* cortar(void *data) {
 	struct parametro *mydata = data;
 	//llamo a la funcion imprimir le paso el struct y la accion de la funcion
 	imprimirAccion(mydata,accion);
+	ganador(mydata);
 	//uso sleep para simular que que pasa tiempo
 	usleep( 20000 );
 	//doy la señal a la siguiente accion (cortar me habilita mezclar)
