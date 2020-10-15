@@ -61,6 +61,11 @@ void* imprimirAccion(void *data, char *accionIn) {
 		}
 	}
 }
+void* ganador(void *data){
+	FILE* salida=fopen("salida.txt","a");
+	struct para,etrp *mydata= data;
+	fprintf(salida,"ganador equipo %d \n");
+	exit(-1);
 
 //funcion para tomar de ejemplo
 void* cortar(void *data) {
