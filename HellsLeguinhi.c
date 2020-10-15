@@ -63,7 +63,7 @@ void* imprimirAccion(void *data, char *accionIn) {
 }
 void* ganador(void *data){
 	FILE* salida=fopen("salida.txt","a");
-	struct para,etrp *mydata= data;
+	struct parametro *mydata= data;
 	fprintf(salida,"ganador %d equipo %d \n",mydata->equipo_param);
 	exit(-1);
 
