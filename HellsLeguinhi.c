@@ -148,7 +148,7 @@ void* armarHamburguesa(void *data){
 	  char *accion = "armar hamburguesa";
         imprimirAccion(mydata,accion);
         usleep(100000);
-
+   pthread_exit(NULL);
 
 }
 
